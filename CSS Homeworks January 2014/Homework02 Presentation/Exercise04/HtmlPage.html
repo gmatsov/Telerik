@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> Homewokr02 Exercise04</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main">
+    <form class="head_form">
+        <input type="button" value="View" class="head_buttons"/>
+        <input type="button" value="Edit" class="head_buttons"/>
+        <input type="button" value="Help" class="head_buttons"/>
+    </form>
+    <div>
+        <form>
+            <input type="text" value="8854455" class="result"/>
+        </form>
+    </div>
+     <div class="underresult">
+        <span>0000</span>  <span>0000</span>  <span>0000</span>  <span>0000</span>
+        <span>0000</span>  <span>0000</span>  <span>0000</span>  <span>0000</span> <br />
+        <span class="opacity_span1">63</span> 
+        <span class="opacity_span2">47</span> 
+        <span class="opacity_span3">32</span> <br />
+        <span>0000</span> <span>0000</span> <span>1000</span> <span>0111</span>
+        <span>0001</span> <span>1011</span> <span>1011</span> <span>0111</span> <br />
+        <span class="opacity_span1">31</span>
+        <span class="opacity_span4">15</span> 
+        <span class="opacity_span3">0</span>
+   </div>
+    <div class="radio_buttons">
+    <div>
+    <form class="accounting_units">
+        <input type="radio" name="accounting_unit" id="hex"/> <label for="hex">Hex</label> <br />
+        <input type="radio" name="accounting_unit" id="dec"/> <label for="dec">Dec</label> <br />
+        <input type="radio" name="accounting_unit" id="oct"/> <label for="oct">Oct</label> <br />
+        <input type="radio" name="accounting_unit" id="bin"/> <label for="bin">Bin</label>
+    </form>
+    </div>
+    <div>
+    <form class="under_accounting_units">
+        <input type="radio" name="under_accounting_unit" id="qword"/> <label for="qword">Qword</label> <br />
+        <input type="radio" name="under_accounting_unit" id="dword"/> <label for="dword">Dword</label> <br />
+        <input type="radio" name="under_accounting_unit" id="word"/> <label for="word">Word</label> <br />
+        <input type="radio" name="under_accounting_unit" id="byte"/> <label for="byte">Byte</label>
+    </form>
+    </div>
+    </div>     
+    <form>
+        <table>
+            <tr>
+                <td> <input type="button" value="&nbsp;" class="button"/></td>
+                <td> <input type="button" value="Mod" class="buttons"/> </td>
+                <td> <input type="button" value="A" class="button" disabled="disabled" /> </td>
+                <td> <input type="button" value="MC" class="memory" /> </td>
+                <td> <input type="button" value="MR" class="memory" /> </td>    
+                <td> <input type="button" value="MS" class="memory" /> </td>
+                <td> <input type="button" value="M+" class="memory" /> </td>
+                <td> <input type="button" value="M-" class="memory" /> </td> 
+            </tr>
+            <tr>
+                <td> <input type="button" value="(" class="buttons"/> </td>
+                <td> <input type="button" value=")" class="buttons"/> </td>
+                <td> <input type="button" value="B" class="button" disabled="disabled"/> </td>
+                <td> <input type="button" value="←" class="buttons"/> </td>
+                <td> <input type="button" value="CE" class="buttons"/> </td>
+                <td> <input type="button" value="C" class="buttons"/> </td>
+                <td> <input type="button" value="±" class="buttons"/> </td>
+                <td> <input type="button" value="√" class="button" disabled="disabled"/> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="Rol" class="buttons"/> </td>
+                <td> <input type="button" value="RoR" class="buttons"/> </td>
+                <td> <input type="button" value="C" class="button" disabled="disabled"/> </td>
+                <td> <input type="button" value="7" class="numbers"/> </td>
+                <td> <input type="button" value="8" class="numbers"/> </td>
+                <td> <input type="button" value="9" class="numbers"/> </td>
+                <td> <input type="button" value="/" class="buttons"/> </td>
+                <td> <input type="button" value="%" class="button" disabled="disabled"/> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="Or" class="buttons"/> </td>
+                <td> <input type="button" value="Hor" class="buttons"/> </td>
+                <td> <input type="button" value="D" class="button" disabled="disabled"/> </td>
+                <td> <input type="button" value="4" class="numbers"/> </td>
+                <td> <input type="button" value="5" class="numbers"/> </td>
+                <td> <input type="button" value="6" class="numbers"/> </td>
+                <td> <input type="button" value="*" class="buttons"/> </td>
+                <td> <input type="button" value="1/x" class="button" disabled="disabled"/> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="Lsh" class="buttons"/> </td>
+                <td> <input type="button" value="Rsh" class="buttons"/> </td>
+                <td> <input type="button" value="E" class="button" disabled="disabled"/> </td>
+                <td> <input type="button" value="1" class="numbers"/> </td>
+                <td> <input type="button" value="2" class="numbers"/> </td>
+                <td> <input type="button" value="3" class="numbers"/> </td>
+                <td> <input type="button" value="-" class="buttons"/> </td>
+                <td rowspan="2"> <input type="button" value="=" id="calc" class="buttons"/> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value="Not" class="buttons"/> </td>
+                <td> <input type="button" value="And" class="buttons"/> </td>
+                <td> <input type="button" value="F" class="button" disabled="disabled"/> </td>
+                <td colspan="2"> <input type="button" value="0" id="zero" class="numbers"/> </td>
+                <td> <input type="button" value="," class="button" disabled="disabled"/> </td>
+                <td> <input type="button" value="+" class="buttons"/> </td>
+            </tr>
+        </table>
+    </form>
+        </div>
+</body>
+</html>

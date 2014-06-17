@@ -1,0 +1,51 @@
+body,
+div,
+a,
+ul,
+li,
+span,
+img {
+  margin: 0;
+  padding: 0;
+}
+body div#wrapper {
+  width: 960px;
+  font-size: 16px;
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+}
+body div#wrapper div {
+  background-color: #ccc;
+  border-radius: 5px;
+  margin: 15px;
+  display: inline-block;
+}
+body div#wrapper div.holder {
+  float: left;
+}
+body div#wrapper div.holder img {
+  border-radius: 5px;
+  width: 550px;
+  margin: -5px;
+}
+body div#wrapper div.playlist ul li {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+body div#wrapper div.playlist ul li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+body div#wrapper div.playlist ul li a:hover {
+  text-decoration: underline;
+}
+body div#wrapper div.playlist ul li img {
+  display: block;
+  border-radius: 10px;
+}
+body div#wrapper div.playlist ul li span {
+  padding-bottom: 5px;
+  display: inline-block;
+}

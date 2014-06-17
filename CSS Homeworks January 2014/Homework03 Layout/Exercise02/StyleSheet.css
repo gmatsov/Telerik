@@ -1,0 +1,42 @@
+﻿body {
+    font-family:Calibri, 'Times New Roman', Tahoma;
+    font-size:14px;
+    background: #eeeeee;
+}
+
+h1,div {
+    margin:20px;
+}
+
+p, img {
+    margin:15px;
+}
+p {
+    display:block;
+    height:90px;
+}
+
+div {
+    border: 1px solid #a09fa3;
+    width:480px;
+    height:172px;
+    background: #fff;
+}
+
+img {
+    border: 1px solid #a09fa3;
+    height:140px;
+    float:left;
+}
+.button_add, .button_listen{
+    background:url('button.png');
+    height: 35px;
+    width:80px;
+    float:right;
+    color: #fff;
+    font-size:15px;
+}
+.button_add {
+    margin-right:20px;
+    margin-bottom:20px;
+}

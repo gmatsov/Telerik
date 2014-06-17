@@ -1,0 +1,47 @@
+@default-font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+@default-font-size:16px;
+@from-color:#EDEDED;
+@to-color:#ABABAB;
+@from-pos:0%;
+@to-pos:100%;
+@default-border-color: #000;
+
+.linear-gradient(@from-color,@from-pos,@to-color, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+
+}
+
+body, div, ul, li, a, table, tr, td, th {
+    margin:0;
+    padding:0;        
+}
+
+body {
+    #wrapper {
+        width: 960px;
+
+    }
+    div {
+        ul {
+             &.tab-strip {
+                border: 1px solid @default-border-color;
+                border-radius: 5px;
+                width: 50%;
+                }
+            li {
+                div {
+                    ul {
+                        li {
+                            list-style-type: disc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

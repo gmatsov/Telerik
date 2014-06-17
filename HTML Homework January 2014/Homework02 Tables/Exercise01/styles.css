@@ -1,0 +1,13 @@
+img {
+	width:165px;
+	height:165px;
+}
+table {
+    float:left;
+    margin-left:30px;
+  }
+ table.data td{
+ 
+	table-layout: fixed;
+    width: 100px;
+}

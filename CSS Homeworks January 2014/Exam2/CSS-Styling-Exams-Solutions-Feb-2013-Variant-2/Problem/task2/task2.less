@@ -1,0 +1,59 @@
+@default-font-size:16px;
+@default-font-family:'Courier New', Courier, 'Nimbus Mono L', monospace;
+@from-color:#ABABAB;
+@to-color:#ddd;
+@from-pos:0%;
+@to-pos:100%;
+
+.linear-gradient(@from-color,@from-pos, @to-color, @to-pos){
+    background: @from-color; /* Old browsers */
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 ); /* IE6-9 */
+    }
+
+body,div,a,span,ul,li{
+    margin:0;
+    padding:0;
+}
+
+body {
+    div#wrapper{
+        width:960px;
+        font-size:@default-font-size;
+        font-family:@default-font-family;
+        div.content{
+            display:none;
+        }
+        ul.notification-list{
+            width:550px;
+            > li {
+                list-style-type:none;
+                display:inline-block;
+            }
+            a{
+                margin:25px;
+                width:100%;
+                display:inline-block;
+                height:30px;
+                text-decoration:none;
+                .linear-gradient(@from-color,@from-pos, @to-color, @to-pos);
+                border:1px solid black;
+                img{
+                    width:15px;
+                    height:15px;
+                }
+                span{
+                    display:inline-block;
+                    color:#777;
+                    font-size:1.2em;
+                    text-align:center;
+                }
+            }
+        }
+    }
+}

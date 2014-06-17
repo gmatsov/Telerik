@@ -1,0 +1,56 @@
+@default-font-family:Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+@default-font-size:16px;
+@from-color:#d29bff;
+@from-pos:0%;
+@to-color:#8a77ff;
+@to-pos:100%;
+
+.linear-gradient(@from-color,@from-pos,@to-color, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+
+}
+
+body,div,h2,h3,hgroup,a,p{
+    margin:0;
+    padding:0;
+}
+
+body{
+    div#wrapper{
+        width:960px;
+        font-family:@default-font-family;
+        font-size:@default-font-size;
+        > div{
+            margin-top:20px;
+            display:inline-block;
+            float:left;
+            width:150px;
+            border-top:2px solid #D3D7DA;
+            border-bottom:2px solid #D3D7DA;
+            border-right:2px solid #D3D7DA;
+            &:first-of-type{
+                margin-left:20px;
+                border-left:2px solid #D3D7DA;
+            }
+            div{
+                a{
+                    color:#CA2D2F;
+                }
+            }
+            hgroup{
+                font-size:14px;
+                text-align:center;
+            }
+            div{
+                &.yellowBox{
+                    border:1px solid yellow;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+﻿body {
+    width:1200px;
+    height:100px;
+    
+}
+div {
+    padding-right:4%;
+    color:red;
+    border-radius:55px;
+    border:1px solid;
+    background:black;
+}

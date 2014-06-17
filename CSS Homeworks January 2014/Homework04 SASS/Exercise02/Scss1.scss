@@ -1,0 +1,26 @@
+$width:250px;
+$height:250px;
+body
+	div
+		img
+		{	
+		width:$width;
+		height:$height;
+		margin:0;
+		padding:0;
+	
+}
+iframe {
+    margin-left:510px;
+    height: $height * 2;
+    width: $width * 2;
+	border:none;
+}
+a:hover{
+	 opacity: 0.7;
+    -moz-transition: all 0.4s ease-out; /* FF4+ */
+    -o-transition: all 0.4s ease-out; /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out; /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out; /* IE10? */
+    transition: all 0.4s ease-out;
+}

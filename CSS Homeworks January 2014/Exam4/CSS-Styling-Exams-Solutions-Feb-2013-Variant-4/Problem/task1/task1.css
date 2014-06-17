@@ -1,0 +1,59 @@
+body,
+div,
+h1,
+img,
+p {
+  margin: 0;
+  padding: 0;
+}
+body div#wrapper {
+  width: 960px;
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 16px;
+}
+body div#wrapper div {
+  margin: 25px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background: -moz-linear-gradient(top, #de28ff 0%, #f9dbff 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de28ff), color-stop(100%, #f9dbff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #de28ff 0%, #f9dbff 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #de28ff 0%, #f9dbff 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #de28ff 0%, #f9dbff 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #de28ff 0%, #f9dbff 100%);
+  /* W3C */
+}
+body div#wrapper div h1 {
+  padding: 15px 0px 0px 35px;
+  font-size: 1.8em;
+}
+body div#wrapper div img {
+  border: none;
+  position: relative;
+  bottom: -35px;
+}
+body div#wrapper div img.left-arrow {
+  float: left;
+}
+body div#wrapper div img.right-arrow {
+  float: right;
+}
+body div#wrapper div p.postedby {
+  display: inline-block;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 390px;
+  margin: 5px 0px 0px 30px;
+  line-height: 30px;
+  text-align: center;
+}
+body div#wrapper div p.info {
+  width: 860px;
+  margin: 25px 30px;
+  text-align: justify;
+}

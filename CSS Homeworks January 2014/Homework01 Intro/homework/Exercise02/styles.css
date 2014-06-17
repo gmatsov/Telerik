@@ -1,0 +1,26 @@
+th {
+border-bottom-color:black;
+background:green;
+text-align:left;
+color:white;
+}
+td {
+width:150px;
+border-bottom-color:1px solid gray;
+}
+.gray {
+background:AntiqueWhite;
+}
+table {
+border-collapse:collapse;
+border-bottom-color:white;
+border-left-color:gray;
+font-size:20px;
+}
+img {
+width:25px;
+height:25px;
+}
+tr {
+border-collapse:collapse;
+}

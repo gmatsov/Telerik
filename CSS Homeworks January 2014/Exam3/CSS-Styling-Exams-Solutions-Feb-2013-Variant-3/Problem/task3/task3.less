@@ -1,0 +1,90 @@
+@default-font-family:Cambria, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+@default-font-size:18px;
+@from-color:#EBFF5B;
+@from-pos:0%;
+@to-color:#474844;
+@to-pos:100%;
+@default-border:1px solid #444;
+.linear-gradient(@from-color,@from-pos,@to-color, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+
+}
+
+html,body,div,a,form,fieldset,label,legend,button{
+    margin:0;
+    padding:0;
+}
+
+body{
+    div#wrapper{
+        width:960px;
+        color:#fff;
+        form{
+            border:@default-border;
+            .linear-gradient(@from-color,@from-pos,@to-color, @to-pos);
+            border-radius:20px;
+            padding:10px;
+            margin:20px;
+            width:400px;
+            text-align:right;
+            fieldset{
+                border:3px solid #555;
+                border-radius:5px;
+                padding:0px 15px;
+                
+                legend{
+                    font-size:1.5em;                   
+                    font-weight:bold;
+                    padding:0px 15px;
+                    font-style:italic;
+                }
+                label{
+                    font-size:1.2em;
+                }
+                input{
+                    .linear-gradient(@from-color,@from-pos,@to-color, @to-pos);
+                    line-height:20px;
+                    border:2px solid #444;
+                    border-radius:5px;
+                    width:150px;
+                    height:25px;
+                    margin:5px 0px;
+                    color:#F8FFE3;
+                    padding:0px 10px;
+                    &#tb-age{
+                        width:25px;
+                    }
+                }
+
+            }
+            #radio-yes,#radio-no{
+                display:none;
+            }
+            input[type=radio]:checked + label{
+                font-weight:bold;
+                font-size:1.1em;
+            }
+            
+            button,input[type=reset]{
+                display:inline-block;
+                .linear-gradient(@from-color,@from-pos,@to-color, @to-pos);
+                font-size:1.3em;
+                border:none;
+                border-radius:5px;
+                border-bottom:1px solid black;
+                color:#333;
+                height:35px;
+                padding:0px 15px;
+                &:hover{
+                    background:#F1FF8E;
+                }
+            }
+        }
+    }
+
+}

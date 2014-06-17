@@ -1,0 +1,30 @@
+﻿li {
+    list-style-type:none;
+}
+
+.sublist {
+    list-style-type:none;
+    display:none;
+    color:gray;
+}
+
+.anothersublist {
+    display:none;
+    color:red;
+    list-style-type:none;
+}
+
+.list:hover{ 
+    text-decoration:underline;
+}
+
+.list:hover .sublist{
+    display:block;
+}
+
+.sublist:hover .anothersublist {
+    display:block;
+}
+.sublist, .anothersublist {
+    text-decoration:none;
+}

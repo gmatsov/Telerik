@@ -1,0 +1,48 @@
+html,
+body,
+div,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+body div#wrapper {
+  width: 960px;
+  color: #0094ff;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+  font-size: 16px;
+}
+body div#wrapper ul {
+  margin: 200px 50px;
+}
+body div#wrapper ul li {
+  display: inline-block;
+  border: 1px solid black;
+  width: 115px;
+  height: 30px;
+  background: -moz-linear-gradient(top, #aaffef 0%, #13ffd2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aaffef), color-stop(100%, #13ffd2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #aaffef 0%, #13ffd2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #aaffef 0%, #13ffd2 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #aaffef 0%, #13ffd2 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #aaffef 0%, #13ffd2 100%);
+  /* W3C */
+  text-align: center;
+}
+body div#wrapper ul li:hover div {
+  display: inline-block;
+}
+body div#wrapper ul li a {
+  line-height: 30px;
+  text-decoration: none;
+  color: #0094FF;
+}
+body div#wrapper ul li div {
+  display: none;
+}

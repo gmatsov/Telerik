@@ -1,0 +1,152 @@
+﻿body {
+    font-family:Calibri, sans-serif, Tahoma;
+    font-size:14px;
+    background: #f1f1f1;
+    margin:0px;
+    padding:0px;
+}
+
+.homeimg {
+    margin-left:10px;
+    margin-top:15px;
+    float:left;
+    width:23px;
+    height:23px;
+}
+
+.side_nav_div {
+    float:left;
+    width:150px;
+}
+
+a {
+    margin-left:10px;
+    display:inline-block;
+    color: #717171;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.homebutton:hover, .sidebar:hover, .sidebar_main:hover {
+        text-decoration:underline;
+}
+
+.sidebar_main {
+    color: #860000;
+    margin-top:10px;
+}
+
+.homebutton {
+    margin-top:15px;
+    font-size:20px;
+}
+
+h1 {
+    margin-left:1%;
+    font-size:30px;
+}
+.previous, .next {
+    margin-left:1%;
+    border:1px solid #595959;
+    width:120px;
+    color: #000;
+    text-align:center;
+    font-size:20px;
+}
+
+.next:after {
+    float:right;
+    content: "►";
+}
+.previous:before {
+    float:left;
+    content: "◄";
+    }
+.borderdiv {
+    float:left;
+    width:500px;
+    margin-top:10px;
+    border:3px solid #c4c4c4;
+    background: #fff;
+}
+hr {
+    border-top:2px solid #e1e1e1;
+    border-bottom:2px solid #f2f2f2;
+    margin:1%;
+}
+.gray {
+    color:#fff;
+    font-size:16px;
+    background: #808080;
+    border:1px solid #757575;
+    margin:1%;
+}
+
+.logocss {
+    width:100px;
+    height:100px;
+    float:left;
+    margin:1%;
+}
+.article_link {
+    color: #a9413f;
+    text-decoration:underline;
+    margin:1%;
+    margin-bottom:3%;
+}
+
+p {
+    font-size:15px;
+    margin:1%;
+}
+
+.foothr {
+    margin-bottom:30px;
+}
+
+.rightmenu {
+    margin-left:1px;
+    border:2px solid #a8a8a8;
+    width:150px;
+    background: #fff;
+    margin-top:10px;
+    float:left;
+}
+
+.rightlink {
+    color: #a23231;
+    text-decoration:underline;
+}
+
+.gray1 {
+    color: #fff;
+    font-size: 16px;
+    background: #808080;
+    border: 1px solid #757575;
+    margin: 1%;
+}
+
+.right_hr {
+    color: #b0b0b0;
+    border-bottom:2px solid #d6d6d6;
+}
+
+.input {
+    margin:1px;
+    border:2px solid #a9bdd0;
+    width:100px;
+}
+.submit {
+    border:2px solid #6688a7;
+    border-radius:4px;
+
+}
+
+.styledbutton {
+    background:linear-gradient(#e4f8ff, #c8eafc, #ddf5ff);
+    border-radius:4px;
+    color: #4acffe;
+    font-size:18px;
+    height:40px;
+    margin-left:23px;
+}

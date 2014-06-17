@@ -1,0 +1,38 @@
+body,
+div,
+h2,
+h3,
+hgroup,
+a,
+p {
+  margin: 0;
+  padding: 0;
+}
+body div#wrapper {
+  width: 960px;
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 16px;
+}
+body div#wrapper > div {
+  margin-top: 20px;
+  display: inline-block;
+  float: left;
+  width: 150px;
+  border-top: 2px solid #D3D7DA;
+  border-bottom: 2px solid #D3D7DA;
+  border-right: 2px solid #D3D7DA;
+}
+body div#wrapper > div:first-of-type {
+  margin-left: 20px;
+  border-left: 2px solid #D3D7DA;
+}
+body div#wrapper > div div a {
+  color: #CA2D2F;
+}
+body div#wrapper > div hgroup {
+  font-size: 14px;
+  text-align: center;
+}
+body div#wrapper > div div.yellowBox {
+  border: 1px solid yellow;
+}

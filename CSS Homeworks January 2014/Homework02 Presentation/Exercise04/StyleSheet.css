@@ -1,0 +1,112 @@
+﻿body  {
+    font-family:Calibri, sans-serif, 'Times New Roman';
+    font-size:13px;
+    width:385px;
+    border:1.5px solid;
+    border-color:#a6b1be;
+    margin:50px;
+    }
+table, form, .buttons, .button, div, .underresult {
+     background:#d9e4f1;
+}
+table {
+    margin-left:auto;
+}
+.buttons, .button, .accounting_units, .under_accounting_units {
+    border-radius:7px;
+}
+span {
+    font-family:sans-serif;
+    margin-right:4%;
+}
+.head_form, .head_buttons {
+        background: linear-gradient(#ffffff, #d3daed);  
+}
+.head_buttons {
+    border:hidden;
+}
+.result, .underresult, .button, .buttons, .accounting_units, .under_accounting_units, .numbers, .memory{
+   border:1.5px solid;
+   border-color:#a6b1be;
+   border-radius:5px;
+}
+.result {
+    margin:5px;
+    background: linear-gradient(#e4eefb, #ffffff);
+    width:93%;
+    height:45px;
+    font-size:x-large;
+    text-align:end;
+    padding-top:15px;
+    padding-right:15px;
+}
+.underresult {
+    width:auto;
+    margin:5px;
+}
+.opacity_span1 {
+    color:gray;
+    margin-right:167px;
+}
+.opacity_span2 {
+    color:gray;
+    margin-right:135px;
+}
+.opacity_span3 {
+    color:gray;
+}
+.opacity_span4 {
+    color:gray;
+     margin-right:141px;
+}
+.accounting_units {
+   padding:5%;
+   height:95px;
+   margin:5px;
+   line-height:150%;
+   width:100%;
+}
+.under_accounting_units {
+    height:93px;
+    width:111%;
+    line-height:180%;
+    margin:5px;
+}
+.buttons {
+    background: linear-gradient(#eff5fb, #d8e3f0);
+    width:33px;
+    height:31px;
+    font-size:14px;
+}
+.numbers {
+     background: #e8eef5;
+     width:33px;
+     height:31px;
+     font-size:18px;
+}
+.button{
+    width:33px;
+    height:31px;
+}
+.memory {
+    width:33px;
+    height:31px;
+    background: #d9e4f1;
+}
+.buttons:hover, .numbers:hover, .memory:hover {
+    background: linear-gradient(#fef0e1, #fce3c7, #fbd382, #fcf5b0);
+}
+#zero {
+    width:100%;
+}
+#calc {
+    height:105%;
+}
+.radio_buttons {
+    width:70px;
+    height:190px;
+    float:left;
+}
+#main {
+    background:#d9e4f1;
+}

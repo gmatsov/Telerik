@@ -1,0 +1,55 @@
+@default-font-size:16px;
+@default-font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+@default-font-color:#0094FF;
+@from-color:#AAFFEF;
+@from-pos:0%;
+@to-color:#13FFD2;
+@to-pos:100%;
+
+.linear-gradient(@from-color,@from-pos,@to-color, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+
+}
+
+html,body,div,ul,li,a {
+    margin:0;
+    padding:0;
+}
+
+body{
+    div#wrapper{
+        width:960px;
+        color:@default-font-color;
+        font-family:@default-font-family;
+        font-size:@default-font-size;
+        ul{
+               margin:200px 50px;
+            li{
+                display:inline-block;
+                border:1px solid black;
+                width:115px;
+                height:30px;
+                .linear-gradient(@from-color,@from-pos,@to-color, @to-pos);
+                text-align:center;
+                &:hover div{
+                    display:inline-block;
+                }
+                a{
+                    line-height:30px;
+                    text-decoration:none;
+                    color:#0094FF;
+                    
+                }
+                div{
+                    display:none;
+
+                }
+            }
+        }
+    }
+}

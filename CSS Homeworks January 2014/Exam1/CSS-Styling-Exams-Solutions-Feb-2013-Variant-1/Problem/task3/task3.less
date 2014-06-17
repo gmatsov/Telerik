@@ -1,0 +1,136 @@
+@default-font-family:Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+@default-font-family-date:Consolas;
+@default-font-size:16px;
+@default-font-color: #555;
+@default-boder:1px solid #000;
+@from-color:#eee;
+@from-pos:0%;
+@to-color:#aaa;
+@to-pos:100%;
+@from-color1:#29edff;
+@to-color1:#c0faff;
+@from-color2:#deffd2;
+@to-color2:#6fff3b;
+@from-color3:#ededed;
+@to-color3:#aaa;
+
+.linear-gradient(@from-color,@from-pos,@to-color, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+
+}
+.linear-gradient-me(@from-color1,@from-pos,@to-color1, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color1 @from-pos, @to-color1 @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color1), color-stop(@to-pos,@to-color1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color1 @from-pos,@to-color1 @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color1 @from-pos,@to-color1 @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color1 @from-pos,@to-color1 @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color1 @from-pos,@to-color1 @to-pos); /* W3C */
+
+}
+.linear-gradient-toshko(@from-color2,@from-pos,@to-color2, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color2 @from-pos, @to-color2 @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color2), color-stop(@to-pos,@to-color2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color2 @from-pos,@to-color2 @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color2 @from-pos,@to-color2 @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color2 @from-pos,@to-color2 @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color2 @from-pos,@to-color2 @to-pos); /* W3C */
+
+}
+.linear-gradient-button(@from-color3,@from-pos,@to-color3, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color3 @from-pos, @to-color3 @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color3), color-stop(@to-pos,@to-color3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color3 @from-pos,@to-color3 @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color3 @from-pos,@to-color3 @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color3 @from-pos,@to-color3 @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color3 @from-pos,@to-color3 @to-pos); /* W3C */
+
+}
+body,div,h1,ul,li,button,span, p{
+    margin:0;
+    padding:0;
+    display:block;
+}
+body{
+    #wrapper{
+        width:960px;
+        color:@default-font-color;
+        div{
+           .linear-gradient(@from-color,@from-pos,@to-color, @to-pos);
+            margin:30px;
+            padding:15px;
+            width:350px;
+            border:@default-boder;
+            border-radius:15px;
+            h1{
+                font-size:1.9em;
+                text-align:center;
+            }
+            ul{
+                list-style-type:none;
+                li{
+                    padding:10px;
+                    border:@default-boder;
+                    border-radius:15px;
+                    margin-bottom:5px;
+                    &.me-item{
+                        .linear-gradient-me(@from-color1,@from-pos,@to-color1, @to-pos);
+                        width:65%;
+                        height:50px;
+                        margin-left:30%;
+                    }
+                    &.toshko-item{
+                        .linear-gradient-toshko(@from-color2,@from-pos,@to-color2, @to-pos);
+                        margin-right:50px;
+                        width:60%;
+                        height:50px;
+                        span{
+                            text-align:right;
+                            &.date{
+                                float:left;
+                            }
+                        }
+
+                    }
+                    span{
+                        font-size:20px;
+                        font-weight:bold;
+                        &.date{
+                            font-family:@default-font-family-date;
+                            font-size:0.8em;
+                            position:relative;
+                            font-weight:normal;
+                            float:right;
+                        }
+                    }
+                }
+            }
+            button{
+                .linear-gradient-button(@from-color3,@from-pos,@to-color3, @to-pos);
+                width:70px;
+                height:30px;
+                border-radius:5px;
+                float:right;
+                font-size:1.2em;
+                border:none;
+                &:hover{
+                    background:#fff;
+                }
+
+            }
+            input {
+                width:40px;
+                border:none;
+                border-radius:5px;
+                width:270px;
+                line-height:25px;
+                color:#555;
+
+            }
+        }
+    }
+}

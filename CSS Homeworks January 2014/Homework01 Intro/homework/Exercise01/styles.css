@@ -1,0 +1,33 @@
+table {
+background:LightGray;
+}
+h1 {
+font-size:25px;
+font-family: Times New Roman;
+color:Indigo;
+}
+td {
+padding-bottom:10px;
+}
+tr {
+font-size:20px;
+}
+span em {
+color:CornflowerBlue;
+}
+.status {
+color:orange;
+}
+.indigo {
+color:Indigo;
+}
+.br {
+color:red;
+}
+.white {
+color:LightGoldenRodYellow;
+}
+span span {
+color:green;
+font-size:40px;
+}

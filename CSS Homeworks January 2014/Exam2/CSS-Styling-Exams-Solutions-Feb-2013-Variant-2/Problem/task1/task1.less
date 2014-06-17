@@ -1,0 +1,69 @@
+@default-font-size:18px;
+@default-font-family:Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+@font-color:#5E5E5E;
+@default-border:1px solid #000;
+@from-color:#EEEEEE;
+@mid-color:#c9c9c9;
+@to-color:#AAAAAA;
+@from-pos:0%;
+@mid-pos:50%;
+@to-pos:100%;
+
+.linear-gradient(@from-color,@from-pos,@mid-color, @mid-pos, @to-color, @to-pos){
+    background: @from-color; /* Old browsers */
+    background: -moz-linear-gradient(top,  @from-color 0%, @mid-color @mid-pos, @to-color 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@from-color), color-stop(@mid-pos,@mid-color), color-stop(100%,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color 0%,@mid-color @mid-pos,@to-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color 0%,@mid-color @mid-pos,@to-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color 0%,@mid-color @mid-pos,@to-color 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color 0%,@mid-color @mid-pos,@to-color 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 ); /* IE6-9 */
+}
+
+div,ul,li,a,table,tr,th,td,h1{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:@default-font-family;
+    font-size:@default-font-size;
+    
+    div{
+        &#wrapper{
+            width:960px;
+            font-family:@default-font-family;
+            font-size:@default-font-size;
+            ul{
+                &.accordion{
+                     margin:50px 40px;                    
+                     list-style-type:none;
+                     li{
+                         a{
+                             font-weight:bold;
+                             text-align:center;
+                             border:@default-border;
+                             display:inline-block;
+                             text-decoration:none;
+                             color:#444444;
+                             font-size:1.3em;
+                             width:400px;
+                             &.accordion-btn{
+                                 .linear-gradient(@from-color,@from-pos,@mid-color, @mid-pos, @to-color, @to-pos);
+                                 &:hover{
+                                     background-color:#aaa;
+                                 }
+                             }
+                           
+                          }
+                         div{
+                             &.accordion-content{
+                                 display:none;
+                             }
+                         }
+                     }
+                }
+            }
+        }
+    }
+}

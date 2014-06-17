@@ -1,0 +1,30 @@
+thead{
+	background:#D3FFE0;
+}
+tfoot {
+	background:#D3FFE0;
+}
+tbody {
+	background:#D3FFB0;
+}
+.1strow {
+	margin:100px;
+}
+.product_id {
+	width:70px;
+	background:	width:85px;
+}
+.product_name {
+	width:85px;
+}
+.unit_price {
+	width:55px;
+}
+.quantity {
+	width:133px;
+}
+.units {
+	width:75px;
+}
+
+

@@ -1,0 +1,61 @@
+@default-font-family:Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+@default-font-size:16px;
+@from-color:#d29bff;
+@from-pos:0%;
+@to-color:#8a77ff;
+@to-pos:100%;
+
+body,div,a,ul,li,span,img{
+    margin:0;
+    padding:0;
+}
+
+body{
+    div#wrapper{
+        width:960px;
+        font-size:@default-font-size;
+        font-family:@default-font-family;
+        div{
+            background-color:#ccc;
+            border-radius:5px;
+            margin:15px;
+            display:inline-block;
+        }
+        div.holder{
+            float:left;
+            img{
+                border-radius:5px;
+                width:550px;
+                margin:-5px;
+
+            }
+        }
+        div.playlist{
+            ul{
+                li{
+                    list-style-type:none;
+                    border-bottom:1px solid black;
+                    margin-bottom:5px;
+
+                    a{
+                        display:inline-block;
+                        color:black;
+                        text-decoration:none;
+                        font-weight:bold;
+                        &:hover{
+                            text-decoration:underline;
+                        }
+                    }
+                    img{
+                        display:block;
+                        border-radius:10px;
+                    }     
+                    span{
+                        padding-bottom:5px;
+                        display:inline-block;
+                    }   
+                }
+            }
+        }
+    }
+}

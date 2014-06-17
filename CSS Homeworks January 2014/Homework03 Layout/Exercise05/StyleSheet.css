@@ -1,0 +1,56 @@
+﻿body {
+    font-family:Calibri, 'Times New Roman', sans-serif;
+}
+
+header {
+    text-align:center;
+}
+
+a {
+    font-size:20px;
+    color: #00adf0;
+}
+
+hr {
+    color: #393939;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #909090;
+    margin: 20px;
+}
+
+div {
+    border:1px solid black;
+    width:390px;
+    margin:20px;
+    float:left;
+}
+
+img {
+	width:65px;
+	height:65px;
+    float:left;
+    padding:1px;
+}
+
+fieldset {
+    width:39%;
+    margin:10px;
+}
+
+.one {
+    float:left;
+}
+
+.parameters {
+    border:none;
+    margin-top:5%;
+    font-size:18px;
+}
+
+.two {
+    margin-bottom:20px;
+}
+
+p {
+    line-height:170%;
+}

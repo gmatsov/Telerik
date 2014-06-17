@@ -1,0 +1,31 @@
+html {
+background:Chocolate;
+}
+h1 {
+font-size:44px;
+text-align:center;
+color:white;	
+}
+nav, nav a {
+text-align:center;
+color:white;
+}
+a {
+color: black;
+}
+.footer {
+text-align:center;
+}
+.current {
+background:BurlyWood;
+}
+section h1 {
+text-align:left;
+font-size:33px;
+}
+a {
+text-decoration: none;
+}
+.a {
+text-decoration:underline;
+}

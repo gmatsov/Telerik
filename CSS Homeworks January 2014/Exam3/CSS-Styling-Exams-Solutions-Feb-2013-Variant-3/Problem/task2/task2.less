@@ -1,0 +1,64 @@
+@default-font-size:16px;
+@default-font-family:Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+@from-color:#8169FF;
+@from-pos:0%;
+@to-color:#fff;
+@to-pos:100%;
+
+.linear-gradient(@from-color,@from-pos,@to-color, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+
+}
+
+body,div,ul,li,a,img{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size:@default-font-size;
+    font-family:@default-font-family;
+    div#wrapper{
+        width:960px;
+        ul{
+            display:inline-block;
+            margin:25px;
+            border-radius:5px;
+            width:150px;
+             .linear-gradient(@from-color,@from-pos,@to-color, @to-pos);
+             overflow-y:scroll;
+             height:200px;
+            li{
+                &.selected{
+                    background-color:#6C4EFF;
+                }
+                list-style-type:none;
+                border-bottom:1px solid black;
+                line-height:30px;
+                padding:0px 15px; 
+                &:last-of-type{
+                    border-bottom:none;
+                }
+                &:first-letter{
+                    text-decoration:underline;
+                }
+            }
+            &.selected-items,&.all-items{
+
+               
+            }
+        }
+        a{
+            display:inline-block;
+            position:relative;
+            top:-80px;
+            margin:0;
+            padding:0;
+        }
+    }
+}

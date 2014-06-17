@@ -1,0 +1,62 @@
+﻿body {
+    font-family:Calibri, sans-serif, 'Californian FB';
+    background: #1e3741;
+}
+
+.nav_div {
+    background: #4b5f67;
+    height:50px;
+    width:678px;
+}
+
+a {
+    display:inline-block;
+    color: #8aa79f;
+    text-decoration:none;
+    font-size:20px;
+    height:100%;
+    padding:10px;
+    border-right:1px solid #1e3741;
+}
+
+div a:hover {
+        text-decoration:underline;
+}
+
+.news {
+    background: #1e3741;
+    color: #fff;
+}
+
+.sport {
+}
+
+.itnews {
+    width:320px;
+    color: #a1a7a6;
+
+    margin-top:25px;
+}
+
+.sidenav {
+    border-top:1px solid #334952;
+    width:320px;
+    color: #a1a7a6;
+    border-bottom:1px solid #29404a;
+}
+article nav {
+    float:left;
+}
+
+iframe {
+    margin-top:25px;
+    margin-left:0px;
+    height:280px;
+    width:384px;
+    border:1px solid #344b55;
+}
+
+.sidenav:hover, .itnews:hover {
+    background: #00968c;
+    color: #fff;
+}

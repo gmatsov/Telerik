@@ -1,0 +1,73 @@
+@default-font-size:16px;
+@default-font-family:Verdana, Geneva, 'DejaVu Sans', sans-serif;
+@from-color:#68D1FF;
+@to-color:#8CFFFB;
+@from-pos:0%;
+@to-pos:100%;
+
+.linear-gradient(@from-color,@from-pos, @to-color, @to-pos){
+    background: @from-color; /* Old browsers */
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 ); /* IE6-9 */
+    }
+
+
+body,div,form,fieldset,button{
+    margin:0;
+    padding:0;
+}
+
+body{
+    div{
+        &#wrapper{
+            width:960px;
+            font-family:@default-font-family;
+            font-size:@default-font-size;
+            form{
+                .linear-gradient(@from-color,@from-pos, @to-color, @to-pos);
+                border:1px solid #333;
+                border-radius:15px;
+                margin:25px;
+                width:410px;
+                fieldset{
+                    border-radius:5px;
+                    margin:0px 10px;
+                    padding:0px 10px;
+                    border:3px solid #333;
+                    text-align:right;  
+                    }                  
+                    legend{          
+                        font-size:1.3em;    
+                        padding:15px 20px;    
+                        font-style:italic; 
+                    }
+                    input{
+                         .linear-gradient(@from-color,@from-pos, @to-color, @to-pos);
+                         border:1px solid #008FCE;
+                         border-radius:5px;
+                         height:25px;
+                         width:200px;
+                         margin-bottom:2px;
+                         &#tb-age{
+                             width:35px;
+                    }  
+                }
+                button{
+                    width:90px;
+                    height:30px;
+                    border-radius:5px;
+                    border:none;
+                   .linear-gradient(@from-color,@from-pos, @to-color, @to-pos);
+                }
+                > input{
+                     .linear-gradient(@from-color,@from-pos, @to-color, @to-pos);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@default-font-family:Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+@default-font-size:16px;
+@from-color:#d29bff;
+@from-pos:0%;
+@to-color:#8a77ff;
+@to-pos:100%;
+@default-border:1px solid #9d00ff;
+
+.linear-gradient(@from-color,@from-pos,@to-color, @to-pos){
+    background: -moz-linear-gradient(top,  @from-color @from-pos, @to-color @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @from-color @from-pos,@to-color @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom,  @from-color @from-pos,@to-color @to-pos); /* W3C */
+
+}
+body, div, u, li, a, aside {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: @default-font-family;
+    font-size: @default-font-size;
+
+    div#wrapper {
+        width: 960px;
+
+        aside {
+            ul {
+                width: 120px;
+                list-style-type: none;
+                .linear-gradient(@from-color,@from-pos,@to-color, @to-pos);
+
+
+                li {
+                    width: auto;
+
+                    &:hover {
+                        border:@default-border;
+                        border-radius:5px;
+                    }
+                    &:hover ul{
+                        display:inline-block;
+                        padding-left:100px;
+                        margin:0 auto;
+                    }
+
+                    a {
+                        text-decoration-color:#9d00ff;
+                        last-of-type{
+                            text-decoration:none;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+
+                        li {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

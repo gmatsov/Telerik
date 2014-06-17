@@ -1,0 +1,32 @@
+form, table, td, tr, th 
+.buttons {
+	position:center;
+}
+.city1 {
+	width:100px;
+}
+.city2 {
+	width:65px;
+}
+}
+tfoot {
+	background:#00E4FF;
+}
+.birth1 {
+	width:25px;
+}
+.birth2 {
+	width:50px;
+}
+.input {
+	width:98%;
+}
+.tel1 {
+	width:40px;
+}
+.tel2 {
+	width:40px;
+}
+.tel3 {
+	width:40px;
+}

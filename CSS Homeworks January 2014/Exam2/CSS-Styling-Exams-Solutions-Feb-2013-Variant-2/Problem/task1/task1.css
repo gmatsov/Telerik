@@ -1,0 +1,59 @@
+div,
+ul,
+li,
+a,
+table,
+tr,
+th,
+td,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 18px;
+}
+body div#wrapper {
+  width: 960px;
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 18px;
+}
+body div#wrapper ul.accordion {
+  margin: 50px 40px;
+  list-style-type: none;
+}
+body div#wrapper ul.accordion li a {
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #000000;
+  display: inline-block;
+  text-decoration: none;
+  color: #444444;
+  font-size: 1.3em;
+  width: 400px;
+}
+body div#wrapper ul.accordion li a.accordion-btn {
+  background: #eeeeee;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #eeeeee 0%, #c9c9c9 50%, #aaaaaa 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(50%, #c9c9c9), color-stop(100%, #aaaaaa));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #c9c9c9 50%, #aaaaaa 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #eeeeee 0%, #c9c9c9 50%, #aaaaaa 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #eeeeee 0%, #c9c9c9 50%, #aaaaaa 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #eeeeee 0%, #c9c9c9 50%, #aaaaaa 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-color', endColorstr='@to-color', GradientType=0);
+  /* IE6-9 */
+}
+body div#wrapper ul.accordion li a.accordion-btn:hover {
+  background-color: #aaa;
+}
+body div#wrapper ul.accordion li div.accordion-content {
+  display: none;
+}
